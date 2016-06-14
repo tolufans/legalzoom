@@ -17,7 +17,10 @@ Route::get('home', 'HomeController@index');
 
 Route::get('create', 'ProductController@create');
 
-Route::get('update/{slug}', 'ProductController@update');
+Route::get('update/{id}', 'ProductController@update');
+
+Route::get('product/{id}', 'ProductController@view');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

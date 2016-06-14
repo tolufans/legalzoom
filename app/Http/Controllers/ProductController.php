@@ -14,4 +14,10 @@ class ProductController extends Controller {
         return view('update_product');
     }
 
+
+    public function view()
+    {
+        return view('view_product');
+    }
+
 }
